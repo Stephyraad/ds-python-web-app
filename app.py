@@ -4,7 +4,8 @@ import plotly.express as px
 
 df = pd.read_csv('./vehicles_us.csv')
 
-st.header('Vehicle Dashboard', divider="gray")
+# st.header('Vehicle Dashboard', divider="gray")
+st.header('Vehicle Dashboard')
 
 # Checkbox to filter by automatic transmission
 if st.checkbox('Show only automatic transmission'):
