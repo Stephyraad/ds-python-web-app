@@ -6,14 +6,6 @@ df = pd.read_csv('./vehicles_us.csv')
 
 st.header('Vehicle Dashboard', divider="gray")
 
-# Histogram of price distribution
-fig_hist = px.histogram(df, x='price', title='Price Distribution')
-st.plotly_chart(fig_hist)
-
-# Scatter plot of price vs. model year
-fig_scatter = px.scatter(df, x='model_year', y='price', title='Price vs. Model Year')
-st.plotly_chart(fig_scatter)
-
 # Checkbox to filter by automatic transmission
 if st.checkbox('Show only automatic transmission'):
     df = df[df['transmission'] == 'automatic']
@@ -24,3 +16,11 @@ if st.checkbox('Show only automatic transmission'):
 
     fig_scatter = px.scatter(df, x='model_year', y='price', title='Price vs. Model Year (Automatic only)')
     st.plotly_chart(fig_scatter)
+else:
+  # Histogram of price distribution
+  fig_hist = px.histogram(df, x='price', title='Price Distribution')
+  st.plotly_chart(fig_hist)
+
+  # Scatter plot of price vs. model year
+  fig_scatter = px.scatter(df, x='model_year', y='price', title='Price vs. Model Year')
+  st.plotly_chart(fig_scatter)
