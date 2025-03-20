@@ -35,7 +35,7 @@ else:
   # Histogram of price distribution
   fig_hist = px.histogram(df,
     x='price',
-    title='Price Distribution (Automatic only)',
+    title='Price Distribution',
     labels={'price': 'Price'}
   )
   fig_hist.update_layout(yaxis_title="Price Distribution")
@@ -45,7 +45,7 @@ else:
   fig_scatter = px.scatter(df,
     x='model_year',
     y='price',
-    title='Price vs. Model Year (Automatic only)',
+    title='Price vs. Model Year',
     labels={
       'model_year': 'Model Year',
       'price': 'Price',
