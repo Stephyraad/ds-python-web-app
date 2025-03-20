@@ -19,7 +19,7 @@ if st.checkbox('Show only automatic transmission'):
         'price': 'Price'
         }
       )
-    fig_hist.update_layout(yaxis_title="Distribution")
+    fig_hist.update_layout(yaxis_title="Car Count")
     st.plotly_chart(fig_hist)
 
     fig_scatter = px.scatter(df,
@@ -42,7 +42,7 @@ else:
       'price': 'Price'
       }
     )
-  fig_hist.update_layout(yaxis_title="Distribution")
+  fig_hist.update_layout(yaxis_title="Car Count")
   st.plotly_chart(fig_hist)
 
   # Scatter plot of price vs. model year
