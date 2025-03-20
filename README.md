@@ -2,10 +2,15 @@
 
 ### **Description:**
 
-- This web app showcases the price distribution of vehicles and the price distribution based on the model year.
-- Two distinct views are available to the user:
-  - The default view displays information about all vehicle prices.
-  - The second view displays information on only automatic vehicles.
+This web app showcases the price distribution of vehicles based:
+
+- The model year.
+- The car frequency.
+
+Two distinct views are available to the user:
+
+- The default view displays information about all vehicle prices.
+- The second view displays information on only automatic vehicles.
 
 ### **Guide:**
 
