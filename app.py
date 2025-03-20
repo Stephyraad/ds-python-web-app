@@ -15,9 +15,11 @@ if st.checkbox('Show only automatic transmission'):
     fig_hist = px.histogram(df,
       x='price',
       title='Price Distribution (Automatic only)',
-      labels={'price': 'Price'}
-    )
-    fig_hist.update_layout(yaxis_title="Price Distribution")
+      labels={
+        'price': 'Price'
+        }
+      )
+    fig_hist.update_layout(yaxis_title="Distribution")
     st.plotly_chart(fig_hist)
 
     fig_scatter = px.scatter(df,
@@ -36,9 +38,11 @@ else:
   fig_hist = px.histogram(df,
     x='price',
     title='Price Distribution',
-    labels={'price': 'Price'}
-  )
-  fig_hist.update_layout(yaxis_title="Price Distribution")
+    labels={
+      'price': 'Price'
+      }
+    )
+  fig_hist.update_layout(yaxis_title="Distribution")
   st.plotly_chart(fig_hist)
 
   # Scatter plot of price vs. model year
