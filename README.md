@@ -15,16 +15,18 @@ Two distinct views are available to the user:
 ### **Local Development:**
 
 1. Git clone the project.
-2. Make sure you have python installed.
-3. In the command line run:
+2. Make sure you have `python` installed.
+3. To install the necessary packages, run in the command line:
 
    `pip install streamlit & pip install -r requirements.txt`
 
-4. To run the app locally, run the commamd line:
+4. To run the app locally, run in the commamd line:
 
    `streamlit run app.py`
 
-5. To view your app navigate in your browser: `http://0.0.0.0:10000/`
+5. To view your app in your browser navigate to:
+
+   `http://0.0.0.0:10000/`
 
 ### **Deploy:**
 
